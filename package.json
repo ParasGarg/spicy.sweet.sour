@@ -1,0 +1,22 @@
+{
+  "name": "spicy.sweet.sour",
+  "version": "1.0.0",
+  "description": "Web application for all the life avenues like travel, food, activities, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParasGarg/spicy.sweet.sour.git"
+  },
+  "author": "Paras Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParasGarg/spicy.sweet.sour/issues"
+  },
+  "homepage": "https://github.com/ParasGarg/spicy.sweet.sour#readme",
+  "dependencies": {
+    "firebase": "^9.15.0"
+  }
+}
