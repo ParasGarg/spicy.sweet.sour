@@ -6,20 +6,13 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "bundle.js",
+    filename: "bundle.[hash].js",
   },
   devtool: "inline-source-map",
-  devServer: {
-    host: "localhost",
-    port: 5000,
-    historyApiFallback: true,
-    open: true,
-  },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
@@ -37,17 +30,20 @@ module.exports = {
               sourceMap: true,
             },
           },
-          {
-            loader: "sass-loader"
-          }
         ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
-      // favicon: "src/favicon.ico",
+      template: "public/index.html",
+      favicon: "public/favicon.ico",
     }),
   ],
+  devServer: {
+    host: "localhost",
+    port: port,
+    historyApiFallback: true,
+    open: true,
+  },
 };

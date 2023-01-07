@@ -1,0 +1,31 @@
+{
+    "header": [
+        {
+            "title": "Home",
+            "link": "spicysweetsour.com/"
+        }
+    ],
+    "social": {
+        "instagram": "insta-url",
+        "facebook": "fb-url",
+        "youtube": "yt-url"
+    },
+    "blogs": {
+        "fairbanks": {
+            "id": "1",
+            "url": "things-to-do-in-fairbanks",
+            "title": "Fun in Fairbanks",
+            "description": "",
+            "loved": 0,
+            "views": 0,
+            "tags": [],
+            "images": {
+                "main": "main-url.jpg",
+                "gallary": [
+                    "url-1.jpg",
+                    "url-2.jpg"
+                ]
+            }
+        }
+    }
+}
